@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container_sem">
+        <div class="color_container red active" id="red"></div>
+        <div class="color_container yellow" id="yellow"></div>
+        <div class="color_container green" id="green"></div>
+    </div>
+    <div class="container_botones --1">
+        <button onclick=red_active() id="btn-red" class="active btn_color btn_red">Red</button>
+        <button onclick=yellow_active() id="btn-yellow" class="btn_color btn_yellow">Yellow</button>
+        <button onclick=green_active() id="btn-green" class="btn_color btn_green">Green</button>
+    </div>
+
+    <div class="container_botones --2">
+        <button onclick=auto_active() id="btn-auto" class="active btn_color">Auto</button>
+        <button onclick=manual_active() id="btn-manual" class="btn_color">Manual</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

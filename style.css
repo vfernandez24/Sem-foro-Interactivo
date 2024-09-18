@@ -1,0 +1,119 @@
+:root {
+    --red-color: #ff0000;
+    --red-shadow-color: #d30000;
+    --yellow-color: #ffff00;
+    --yellow-shadow-color: #ddbc00;
+    --green-color: #00ff00;
+    --green-shadow-color: #00a300;
+    --background-color: #222;
+    --background-off-color: #181b25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #000031dc, #05054ddc);
+}
+
+.container_sem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: 0;
+    background: var(--background-color);
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+.color_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+    background: #181b25;
+}
+
+.red.active {
+    background: var(--red-color);
+    box-shadow: 0px 0px 15px var(--red-shadow-color);
+}
+
+.yellow.active {
+    background: var(--yellow-color);
+    box-shadow: 0px 0px 15px var(--yellow-shadow-color);
+}
+
+.green.active {
+    background: var(--green-color);
+    box-shadow: 0px 0px 15px var(--green-shadow-color);
+}
+
+.container_botones {
+    width: fit-content;
+    height: 40px;
+    background: #ececec;
+    border-radius: 50px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 15px #c7c7c7;
+}
+
+.--1 {
+    top: 30px;
+}
+
+.--2 {
+    bottom: 30px;
+}
+
+.btn_color {
+    all: unset;
+    height: 100%;
+    width: fit-content;
+    padding: 0 25px;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background: none;
+    transition: all ease 0.5s;
+}
+
+.btn_color.active {
+    background: #b3b3b3;
+}
+
+.btn_color:hover {
+    background: #222;
+}
+
+.btn_red:hover {
+    background: var(--red-shadow-color);
+    box-shadow: 0px 0px 15px var(--red-shadow-color);
+}
+
+.btn_yellow:hover {
+    background: var(--yellow-shadow-color);
+    box-shadow: 0px 0px 15px var(--yellow-shadow-color);
+}
+
+.btn_green:hover {
+    background: var(--green-shadow-color);
+    box-shadow: 0px 0px 15px var(--green-shadow-color);
+}
